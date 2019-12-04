@@ -75,6 +75,20 @@ RSpec.configure do |config|
     # Prevents you from mocking or stubbing a method that does not exist on
     # a real object. This is generally recommended.
     mocks.verify_partial_doubles = true
-  end
-=end
+    
+  def reverse_each_word(string)
+  s_to_a = string.split
+  array_reversed = []
+  s_to_a.each {|i| array_reversed << i.reverse }
+  a_to_s = array_reversed.join(" ")
+  a_to_s
+end
+
+def reverse_each_word(string)
+  s_to_a = string.split
+  array_reversed = []
+  s_to_a.collect {|i| array_reversed << i.reverse }
+  a_to_s = array_reversed.join(" ")
+  a_to_s
+
 end
