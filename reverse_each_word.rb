@@ -6,3 +6,6 @@ def reverse_each_word(sentence)
   end
   words_r.join(" ")
 end
+
+p reverse_each_word("My Mama is a bitch")
+
