@@ -8,3 +8,4 @@ def reverse_each_word(sentence)
 end
 
 p reverse_each_word("My Mama is a bitch")
+
